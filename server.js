@@ -35,20 +35,22 @@ app.get('/author', (req, res) =>{
 });
 
 app.get("/", function (req, res) {
-    res.render("harid");
+    res.render("reja");
 });
 
 //app.get("/", function (req, res) {
- //   res.end("Hello World");
+   // res.end("Hello World");
 //});
 
 //app.post("/create-item", function (req, res){
-    //console.log(req.body);
-//});
+   // console.log(req.body);
+//
+// });
 
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
-    console.log(`the server is running successfully on port: ${PORT}`);
+    console.log(`the server is running successfully on port: ${PORT}, http://localhost:${PORT}`
+  );
 });
 
