@@ -1,53 +1,27 @@
-//const http = require("http");
-//const app = require("./app");
-//const { MongoClient } = require("mongodb"); 
-
-//const connectionString = "mongodb+srv://<db_username>:<db_reja>@cluster0.2e8r5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-//const client = new MongoClient(connectionString, { useNewUrlParser: true, useUnifiedTopology: true });
-
-//async function startServer() {
-    //try {
-       // await client.connect();
-        //console.log("MongoDB connection succeeded");
-       // console.log(client);
-
-        
-        //const server = http.createServer(app);
-        //const PORT = 3000;
-        //server.listen(PORT, () => {
-         //   console.log(`Server is running on http://localhost:${PORT}`);
-       // });
-
-    //} catch (err) {
-      //  console.error("Error connecting to MongoDB:", err);
-   // }
-//}
-
-//startServer(); 
-
-
 const http = require("http");
-const app = require("./app");
+const mongodb = require("mongodb");
+
 
 let db;
-const connectionString = "mongodb+srv://<db_username>:<db_>@cluster0.2e8r5.mongodb.net/reja=true&w=majority&appName=Cluster0";
+const connectionString = "mongodb+srv://ortikjon:Y44DzVT4Zb0DxFhG@cluster0.2e8r5.mongodb.net/Reja?retryWrites=true&w=majority&appName=Cluster0";
 
-MongoDB.connect(connectionString,
+mongodb.connect(connectionString,
     {
     useNewUrlParser: true,
-    useUnifieldTopology: true,
-}, (err, client) => {
-   if(err) console.log("ERROR on connection MongoDB");
+    useUnifiedTopology: true,
+}, 
+(err, client) => {
+   if(err) console.log("Error on connection MongoDB");
     else {
-   console.log("MongoDB connection succeed");
+   console.log('MongoDB connection succeed');
    module.exports = client;
 
+const app = require("./app");
 const server = http.createServer(app);
-let PORT = 3000;
+let PORT = 3002;
 server.listen(PORT, function () {
     console.log(`the server is running successfully on port: ${PORT}, http://localhost:${PORT}`
   );
+})
+}
 });
-}
-}
-);
