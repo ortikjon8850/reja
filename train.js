@@ -1,3 +1,10 @@
+// TASK -B
+// function countDigits(str) {
+   // return (str.match(/\d/g) || []).length; 
+
+// } 
+// console.log(countDigits("3n3nrwmwnrww24563")); 
+
 // TASK -A
 // function countLetter(letter, word) {
    // const array = [...word];  // so'zni belgilar qatoriga aylantirish
