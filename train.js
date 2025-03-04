@@ -1,3 +1,48 @@
+// TASK -C
+// class Shop {
+   //constructor(non, lagmon, cola) {
+     //  this.products = {
+      //     non: non,
+       //    lagmon: lagmon,
+        //   cola: cola
+       //};
+   //}
+
+   //logTime() {
+      // const now = new Date();
+      // return `hozir ${now.getHours()}:${now.getMinutes()}da`;
+  // }
+
+  // qoldiq() {
+      // return `${this.logTime()} ${this.products.non}ta non, ${this.products.lagmon}ta lagmon va ${this.products.cola}ta cola mavjud!`;
+  // }
+
+   //sotish(mahsulot, miqdor) {
+  //     if (this.products[mahsulot] !== undefined && this.products[mahsulot] >= miqdor) {
+         //  this.products[mahsulot] -= miqdor;
+      //     console.log(`${this.logTime()} ${miqdor}ta ${mahsulot} sotildi.`);
+     //  } else {
+       //    console.log(`${this.logTime()} Sotish amalga oshmadi, yetarli ${mahsulot} yo‘q!`);
+      // }
+  // }
+
+ //  qabul(mahsulot, miqdor) {
+     //  if (this.products[mahsulot] !== undefined) {
+      //     this.products[mahsulot] += miqdor;
+       //    console.log(`${this.logTime()} ${miqdor}ta ${mahsulot} qabul qilindi.`);
+     //  } else {
+      //     console.log(`${this.logTime()} Noto'g'ri mahsulot nomi!`);
+     //  }
+ //  }
+//}
+
+// Test qilish:
+//const shop = new Shop(4, 5, 2);
+//console.log(shop.qoldiq());
+//shop.sotish('non', 3);
+//shop.qabul('cola', 4);
+//console.log(shop.qoldiq());
+
 // TASK -B
 // function countDigits(str) {
    // return (str.match(/\d/g) || []).length; 
@@ -7,6 +52,7 @@
 
 // TASK -A
 // function countLetter(letter, word) {
+
    // const array = [...word];  // so'zni belgilar qatoriga aylantirish
   //  const count = array.filter(belgi => belgi === letter).length;  // harflarning yuzaga kelishini sanash
   //  return count;
