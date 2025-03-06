@@ -1,3 +1,15 @@
+// TASK -D
+function checkContent(str1, str2) {
+   
+   return new Set(str1).size === new Set(str2).size && [...new Set(str1)].sort().join('') === [...new Set(str2)].sort().join('');
+}
+
+
+console.log(checkContent("mitgroup", "gmtiprou"));  // true qaytarishi kerak
+console.log(checkContent("hello", "world"));       // false qaytarishi kerak
+console.log(checkContent("abc", "cab"));           // true qaytarishi kerak
+console.log(checkContent("test", "tess"));         // false qaytarishi kerak
+
 // TASK -C
 // class Shop {
    //constructor(non, lagmon, cola) {
