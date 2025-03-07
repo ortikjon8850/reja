@@ -1,14 +1,25 @@
-// TASK -D
-function checkContent(str1, str2) {
-   
-   return new Set(str1).size === new Set(str2).size && [...new Set(str1)].sort().join('') === [...new Set(str2)].sort().join('');
+// TASK -E
+function getReverse(str) {
+   return str.split('').reverse().join('');
 }
 
+// Test qilish
+console.log(getReverse("hello")); // "olleh"
+console.log(getReverse("world")); // "dlrow"
+console.log(getReverse("JavaScript")); // "tpircSavaJ"
+console.log(getReverse("MAX")); // "XAM"
 
-console.log(checkContent("mitgroup", "gmtiprou"));  // true qaytarishi kerak
-console.log(checkContent("hello", "world"));       // false qaytarishi kerak
-console.log(checkContent("abc", "cab"));           // true qaytarishi kerak
-console.log(checkContent("test", "tess"));         // false qaytarishi kerak
+// TASK -D
+//function checkContent(str1, str2) {
+   
+  // return new Set(str1).size === new Set(str2).size && [...new Set(str1)].sort().join('') === [...new Set(str2)].sort().join('');
+//}
+
+
+//console.log(checkContent("mitgroup", "gmtiprou"));  // true qaytarishi kerak
+//console.log(checkContent("hello", "world"));       // false qaytarishi kerak
+//console.log(checkContent("abc", "cab"));           // true qaytarishi kerak
+//console.log(checkContent("test", "tess"));         // false qaytarishi kerak
 
 // TASK -C
 // class Shop {
