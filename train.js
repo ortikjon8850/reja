@@ -1,13 +1,33 @@
+// TASK -F
+//function findDoublers(str) {
+  // const charSet = new Set();
+   
+  // for (let char of str) {
+   //    if (charSet.has(char)) {
+      //     return true; // Agar harf allaqachon uchragan bo'lsa, true 
+    //   }
+      // charSet.add(char);
+  // }
+   
+ //  return false; // Agar hech qanday harf takrorlanmasa, false 
+//}
+
+// Test:
+//console.log(findDoublers("hello")); // true
+//console.log(findDoublers("world")); // false
+//console.log(findDoublers("apple")); // true
+//console.log(findDoublers("abcde")); // false
+
 // TASK -E
-function getReverse(str) {
-   return str.split('').reverse().join('');
-}
+//function getReverse(str) {
+ //  return str.split('').reverse().join('');
+//}
 
 // Test qilish
-console.log(getReverse("hello")); // "olleh"
-console.log(getReverse("world")); // "dlrow"
-console.log(getReverse("JavaScript")); // "tpircSavaJ"
-console.log(getReverse("MAX")); // "XAM"
+//console.log(getReverse("hello")); // "olleh"
+//console.log(getReverse("world")); // "dlrow"
+//console.log(getReverse("JavaScript")); // "tpircSavaJ"
+//console.log(getReverse("MAX")); // "XAM"
 
 // TASK -D
 //function checkContent(str1, str2) {
